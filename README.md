@@ -57,9 +57,9 @@ docker logs prometheus
 docker logs grafana
 
 ## Start Localhost IP-address:Port
-http://192.168.43.72:8081/  Nexus
-http://192.168.43.72:9000/ SonarQube
-http://192.168.43.72:8080/ Jenkins
-http://192.168.43.72:9090/ Prometheus
-http://192.168.43.72:3000/ Grafana
+- http://192.168.43.72:8081/  Nexus
+- http://192.168.43.72:9000/ SonarQube
+- http://192.168.43.72:8080/ Jenkins
+- http://192.168.43.72:9090/ Prometheus
+- http://192.168.43.72:3000/ Grafana
 __________________________________________________________________________________________________________________________________________________________
