@@ -54,8 +54,18 @@ ________________________________________________________________________________
 
 ## ✔️ Systemd:
 #### Start Prometheus service
+
+```
+tar -xvf prometheus-2.54.0-rc.0.linux-amd64
+cd > prometheus-2.54.0-rc.0.linux-amd64
+./prometheus
+```
+- After reboot Machine run only `./prometheus`
+
+
 ```
 sudo systemctl start prometheus
+sudo systemctl daemon-reload
 ```
 
 #### Start Grafana service
@@ -81,17 +91,10 @@ sudo journalctl -u prometheus
 sudo journalctl -u grafana-server
 ```
 
-## ✔️ Docker:
+## ✔️ Docker Start docker container
 #### Start Prometheus container
 ```
-tar -xvf prometheus-2.54.0-rc.0.linux-amd64
-cd > prometheus-2.54.0-rc.0.linux-amd64
-./prometheus
-```
-- After reboot Machine run only `./prometheus`
-```
 docker start prometheus
-sudo systemctl daemon-reload
 ```
 
 #### Start Grafana container
