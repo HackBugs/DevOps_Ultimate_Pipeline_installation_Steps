@@ -183,11 +183,11 @@ chmod +x 1sh - Change permissions to executable
   - Kubernetes Credentials
 ______________________________________________________________________________________________________________________________________
 
-### Kubernetes install - https://github.com/HackBugs/DevOps_Shack_Ultimate_Pipeline_12_march-2/blob/main/PHASE-1/2.%20K8-Setup.md
+### [Kubernetes install](https://github.com/HackBugs/DevOps_Shack_Ultimate_Pipeline_12_march-2/blob/main/PHASE-1/2.%20K8-Setup.md)
   - Master - EC2-1
   - Slave - EC2-2
   - Slave - EC2-3
-### Docker install on both - https://docs.docker.com/engine/install/ubuntu/
+### [Docker install on both](https://docs.docker.com/engine/install/ubuntu/)
 - SonarQube - EC2-4
   ```sh
   docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
