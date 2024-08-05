@@ -119,7 +119,7 @@ docker logs prometheus
 docker logs grafana
 ```
 
-## ✔️ Start Localhost IP-address:Port
+## ✔️ Start Localhost IP-address:Port - Use your IP
 - http://192.168.43.72:8081/  Nexus
 - http://192.168.43.72:9000/ SonarQube
 - http://192.168.43.72:8080/ Jenkins
