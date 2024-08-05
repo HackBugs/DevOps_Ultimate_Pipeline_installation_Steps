@@ -55,19 +55,19 @@ ________________________________________________________________________________
 ## ✔️ Systemd:
 #### Start Prometheus service
 
-`
+```
 tar -xvf prometheus-2.54.0-rc.0.linux-amd64.tar.gz
 cd > prometheus-2.54.0-rc.0.linux-amd64
 ./prometheus &
-`
+```
 - After reboot Machine run only `./prometheus &`
 
-- Blackbox Exporter same like `./blackbox_exporter &`
-`
+- Blackbox Exporter same like Prometheus `./blackbox_exporter &`
+```
 tar -xvf blackbox_exporter-0.25.0.linux-amd64.tar.gz
 cd > blackbox_exporter-0.25.0.linux-amd64 
 ./prometheus &
-`
+```
 ```
 sudo systemctl start prometheus
 sudo systemctl daemon-reload
