@@ -1,5 +1,5 @@
 
-# ✍️ After Reboot Virtul Machine or reboot your system use these cmd to run service again
+# ✍️ After Reboot Virtul Machine or Reboot Your System use these CMD to run Service Again.
 ________________________________________________________________________________________________________________________________
 
 ## Start Services of these DevOps tools
