@@ -154,9 +154,9 @@ EC2 > Security Groups > launch-wizard-2 > Edit inbound rules
 
 **EC2 > Number of instances - 1 > Ubuntu Server 22.4 > t2.large > Configure storage 20 GB**
 - For Monitoring - EC2-7
-    - Prometheus
-        - Blackbox-exporter
-    - Grafana
+    - [Prometheus](https://prometheus.io/download/)
+        - [Blackbox-exporter](https://prometheus.io/download/)
+    - [Grafana](https://grafana.com/grafana/download)
  
 ## Downlaod Packeges use with script
 ```sh
