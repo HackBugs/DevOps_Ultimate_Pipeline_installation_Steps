@@ -141,6 +141,7 @@ EC2 > Security Groups > launch-wizard-2 > Edit inbound rules
 #### Create this all EC2 Instances
 
 **EC2 > Number of instances - 3 > Ubuntu Server 22.4 > t2.medium > Configure storage 25 GB**
+- [Insatll kubernetes orchestration](https://github.com/HackBugs/DevOps_Shack_Ultimate_Pipeline_12_march/blob/main/PHASE-1/2.%20K8-Setup.md)
  - Master - EC2-1
  - Slave1 - EC2-2
  - Slave2 - EC2-3
