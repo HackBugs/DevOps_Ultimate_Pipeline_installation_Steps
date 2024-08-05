@@ -2,7 +2,7 @@
 # ✍️ After Reboot Virtul Machine or Reboot Your System use these CMD to run Service Again.
 ________________________________________________________________________________________________________________________________
 
-## Start Services of these DevOps tools
+## ✔️ Start Services of these DevOps tools
 ```
 - docker ps -a
 ```
@@ -13,7 +13,7 @@ ________________________________________________________________________________
 - docker start Nexus
 ```
 
-## Nexus and SonarQube Start docker container
+## ✔️ Nexus and SonarQube Start docker container
 ```
 - docker rm sonar
 ```
@@ -27,7 +27,7 @@ ________________________________________________________________________________
 - docker run -d --name Nexus -p 8081:8081 sonatype/nexus3
 ```
 
-## Nexus and SonarQube
+## ✔️ Nexus and SonarQube
 ```
 - docker logs sonar
 ```
@@ -35,7 +35,7 @@ ________________________________________________________________________________
 - docker logs Nexus
 ```
 
-## jenkins
+## ✔️ jenkins
 ```
 - sudo systemctl start jenkins
 ```
@@ -52,7 +52,7 @@ ________________________________________________________________________________
 - sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-## Systemd:
+## ✔️ Systemd:
 #### Start Prometheus service
 ```
 sudo systemctl start prometheus
@@ -81,7 +81,7 @@ sudo journalctl -u prometheus
 sudo journalctl -u grafana-server
 ```
 
-## Docker:
+## ✔️ Docker:
 #### Start Prometheus container
 ```
 tar -xvf prometheus-2.54.0-rc.0.linux-amd64
@@ -110,7 +110,7 @@ docker logs prometheus
 docker logs grafana
 ```
 
-## Start Localhost IP-address:Port
+## ✔️ Start Localhost IP-address:Port
 - http://192.168.43.72:8081/  Nexus
 - http://192.168.43.72:9000/ SonarQube
 - http://192.168.43.72:8080/ Jenkins
