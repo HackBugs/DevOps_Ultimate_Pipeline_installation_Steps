@@ -1,7 +1,7 @@
 ________________________________________________________________________________________________________________________________
 
 ## Start Services of these DevOps tools
-- docker ps -a
+- ```docker ps -a```
 - docker start sonar
 - docker start Nexus
 
