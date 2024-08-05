@@ -1,5 +1,5 @@
 
-# ✍️ After Reboot Virtul Machine or reebot use these cmd to run service again
+# ✍️ After Reboot Virtul Machine or reboot your system use these cmd to run service again
 ________________________________________________________________________________________________________________________________
 
 ## Start Services of these DevOps tools
