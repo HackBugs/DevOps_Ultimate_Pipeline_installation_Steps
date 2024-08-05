@@ -156,7 +156,6 @@ EC2 > Security Groups > launch-wizard-2 > Edit inbound rules
 - For Monitoring - EC2-7
     - Prometheus
         - Blackbox-exporter
-        - https://github.com/prometheus/blackbox_exporter
     - Grafana
  
 ## Downlaod Packeges use with script
