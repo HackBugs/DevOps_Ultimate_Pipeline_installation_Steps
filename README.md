@@ -2,8 +2,8 @@
 ## 🛠️ After Reboot Virtul Machine or Reboot Your System use these CMD to run Service Again.
 - ## Author : ✍️ HackBugs
 
-<details><summary><b>Commands Restart DevOps Tools</b></summary>
-## ✔️ Start Services of these DevOps tools 
+<details><summary><b>✔️ Start Services of these DevOps tools</b></summary>
+ 
 ```
 - docker ps -a
 ```
@@ -154,9 +154,9 @@ docker logs grafana
  kubectl version --client
  ```
 </details>
-________________________________________________________________________________________________________________________________________________________________________________________
 
-## ✔️ After installing Minikube, restart your Ubuntu machine and run minikube start --force. If issues persist, try the command.
+<details><summary><b>✔️ After Restart your Ubuntu machine and run `minikube start --force`. If unable to start , try the command.</b></summary>
+ 
 The error message indicates multiple issues when Minikube attempts to start with the Docker driver. Here’s a breakdown of the errors and how to address them:
 
 ### 1. **Root Privileges Issue**
@@ -220,8 +220,10 @@ The error message about certificates (`certificate apiserver-kubelet-client not 
 ### Additional Resources
 
 If you continue facing issues, consider checking the Minikube documentation or filing an issue on the [Minikube GitHub page](https://github.com/kubernetes/minikube/issues). 
+</details>
 
-## ✔️ After a reboot, you'll need to start Minikube again to get your Kubernetes cluster up and running. Here’s how you can start Minikube and check its status after rebooting your Ubuntu system:
+<details><summary><b>✔️ After a reboot, you'll need to start Minikube again to get your Kubernetes cluster up and running.</b></summary>
+
 
 ### 1. **Start Minikube**
 
@@ -308,18 +310,19 @@ If you encounter persistent issues, you can delete the existing Minikube cluster
    ```
 
 By following these steps, you should be able to manage Minikube effectively after a reboot.
-____________________________________________________________________________________________________________________________________________________________
 
-## ✔️ Start Localhost IP-address:Port - Use your IP
+</details>
+
+<details><summary><b>✔️ Start Localhost IP-address:Port - Use your IP</b></summary>
 - http://192.168.43.72:8081/  Nexus
 - http://192.168.43.72:9000/ SonarQube
 - http://192.168.43.72:8080/ Jenkins
 - http://192.168.43.72:9090/ Prometheus
 - http://192.168.43.72:3000/ Grafana
 - http://192.168.43.72:9115/ Blackbox Exporter
-__________________________________________________________________________________________________________________________________________________________
+</details>
 
-# ✍️ Installation Setups Process DevOps Project
+<details><summary><b> ✍️ Installation Setups Process DevOps Project</b></summary>
 
 ## AWS - VPC 
 ## AWS Network Environment setup
@@ -372,8 +375,9 @@ chmod +x 1sh - Change permissions to executable
   - Kubernetes CLI
   - Kubernetes Client API
   - Kubernetes Credentials
-______________________________________________________________________________________________________________________________________
-
+</details>
+<details><summary><b> ✍️ Requred EC2 Instance installtion cmd of SonarQube & Nexus</b></summary>
+ 
 ### [Kubernetes install](https://github.com/HackBugs/DevOps_Shack_Ultimate_Pipeline_12_march-2/blob/main/PHASE-1/2.%20K8-Setup.md)
   - Master - EC2-1
   - Slave - EC2-2
@@ -395,5 +399,4 @@ ________________________________________________________________________________
 - Prometheus
 - Blackbox-exporter
 - Grafana
-______________________________________________________________________________________________________________________________________________
-
+</details>
