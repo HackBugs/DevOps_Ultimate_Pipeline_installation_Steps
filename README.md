@@ -3,7 +3,7 @@
 - ## Author : ✍️ HackBugs
 ________________________________________________________________________________________________________________________________
 <details><summary><b>Restart DevOps tools</b></summary>
-## ✔️ Start Services of these DevOps tools
+ ✔️ Start Services of these DevOps tools
 ```
 - docker ps -a
 ```
@@ -14,7 +14,7 @@ ________________________________________________________________________________
 - docker start Nexus
 ```
 
-## ✔️ Nexus and SonarQube Start docker container
+✔️ Nexus and SonarQube Start docker container
 ```
 - docker rm sonar
 ```
@@ -28,7 +28,7 @@ ________________________________________________________________________________
 - docker run -d --name Nexus -p 8081:8081 sonatype/nexus3
 ```
 
-## ✔️ Nexus and SonarQube
+ ✔️ Nexus and SonarQube
 ```
 - docker logs sonar
 ```
@@ -36,7 +36,7 @@ ________________________________________________________________________________
 - docker logs Nexus
 ```
 
-## ✔️ jenkins
+ ✔️ jenkins
 ```
 - sudo systemctl start jenkins
 ```
@@ -53,8 +53,8 @@ ________________________________________________________________________________
 - sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-## ✔️ Systemd:
-#### Start Prometheus service
+ ✔️ Systemd:
+ Start Prometheus service
 
 ```
 tar -xvf prometheus-2.54.0-rc.0.linux-amd64.tar.gz
@@ -74,52 +74,52 @@ sudo systemctl start prometheus
 sudo systemctl daemon-reload
 ```
 
-#### Start Grafana service
+ Start Grafana service
 ```
 sudo systemctl start grafana-server
 ```
 
-#### Check status
+ Check status
 ```
 sudo systemctl status prometheus
 sudo systemctl status grafana-server
 ```
 
-#### Enable services to start on boot
+ Enable services to start on boot
 ```
 sudo systemctl enable prometheus
 sudo systemctl enable grafana-server
 ```
 
-#### Logs Check:
+ Logs Check:
 ```
 sudo journalctl -u prometheus
 sudo journalctl -u grafana-server
 ```
 
-## ✔️ Docker Start docker container
-#### Start Prometheus container
+ ✔️ Docker Start docker container
+ Start Prometheus container
 ```
 docker start prometheus
 ```
 
-#### Start Grafana container
+ Start Grafana container
 ```
 docker start grafana
 ```
 
-#### Check running containers
+ Check running containers
 ```
 docker ps -a
 ```
 
-#### Logs Check:
+ Logs Check:
 ```
 docker logs prometheus
 docker logs grafana
 ```
 
-## ✔️ kubernetes orchestration
+ ✔️ kubernetes orchestration
 - Minikube > Kubeadm > kubelet > kubectl
 1. Restart Minikube
  ```
@@ -151,24 +151,24 @@ docker logs grafana
  kubectl version --client
  ```
 ________________________________________________________________________________________________________________________________________________________________________________________
-#<details><summary><b>Restart Minikube</b></summary>
+<details><summary><b>Restart Minikube</b></summary>
  
-## ✔️ After Minikube installation you restart you ubuntu machine and used cmd `minkikube start --force` and try to restart minkube if you are uable Than use this CMD to restart again
+ ✔️ After installing Minikube, restart your Ubuntu machine and run minikube start --force. If issues persist, try the command again.
 The error message indicates multiple issues when Minikube attempts to start with the Docker driver. Here’s a breakdown of the errors and how to address them:
 
-### 1. **Root Privileges Issue**
+ 1. **Root Privileges Issue**
 
 You’re running Minikube with root privileges, which is not recommended for the Docker driver. Minikube should be run as a regular user. If you’re currently logged in as root, switch to a non-root user and try starting Minikube again.
 
-### 2. **Docker Container Missing**
+ 2. **Docker Container Missing**
 
 Minikube is trying to create a Docker container but is encountering issues. Ensure Docker is correctly set up and running on your system.
 
-### 3. **Certificates Issue**
+3. **Certificates Issue**
 
 The error message about certificates (`certificate apiserver-kubelet-client not signed by CA certificate ca`) suggests a problem with Kubernetes certificate generation. This is often due to issues with the Minikube setup or conflicts with existing files.
 
-### Steps to Resolve:
+ Steps to Resolve:
 
 1. **Switch to Non-Root User:**
    - Log out from the root user and log in with your regular user account. Ensure that your user is part of the `docker` group.
@@ -214,7 +214,7 @@ The error message about certificates (`certificate apiserver-kubelet-client not 
      minikube start --driver=none
      ```
 
-### Additional Resources
+ Additional Resources
 
 If you continue facing issues, consider checking the Minikube documentation or filing an issue on the [Minikube GitHub page](https://github.com/kubernetes/minikube/issues). 
 ____________________________________________________________________________________________________________________________________________________________
