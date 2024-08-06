@@ -2,7 +2,7 @@
 ## 🛠️ After Reboot Virtul Machine or Reboot Your System use these CMD to run Service Again.
 - ## Author : ✍️ HackBugs
 ________________________________________________________________________________________________________________________________
-## <details><summary><b>Restart DevOps tools</b></summary>
+<details><summary><b>Restart DevOps tools</b></summary>
 ## ✔️ Start Services of these DevOps tools
 ```
 - docker ps -a
