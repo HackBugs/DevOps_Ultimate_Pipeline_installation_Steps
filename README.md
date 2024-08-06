@@ -152,7 +152,7 @@ docker logs grafana
  ```
 ________________________________________________________________________________________________________________________________________________________________________________________
 
-## ✔️ After installing Minikube, restart your Ubuntu machine and run minikube start --force. If issues persist, try the command again.
+## ✔️ After installing Minikube, restart your Ubuntu machine and run minikube start --force. If issues persist, try the command.
 The error message indicates multiple issues when Minikube attempts to start with the Docker driver. Here’s a breakdown of the errors and how to address them:
 
 ### 1. **Root Privileges Issue**
