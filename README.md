@@ -122,33 +122,33 @@ docker logs grafana
 ## ✔️ kubernetes orchestration
 - Minikube > Kubeadm > kubelet > kubectl
 1. Restart Minikube
-   ```
-   minikube stop
-   minikube start --driver=docker
-   ```
+ ```
+ minikube stop
+ minikube start --driver=docker
+ ```
 2. Restart kubeadm
-  ```
-  kubeadm reset
-  kubeadm init
-  ```
+ ```
+ kubeadm reset
+ kubeadm init
+ ```
 3. Restart kubelet
-   ```
-   sudo systemctl restart kubelet
-   ```
+ ```
+ sudo systemctl restart kubelet
+ ```
 4. Restart kubectl
-   ```
-   kubectl config view
-   kubectl config use-context <context-name>
+ ```
+ kubectl config view
+ kubectl config use-context <context-name>
 
-   ```
-   ```
-   # For Linux
-   curl -LO "https://dl.k8s.io/release/v1.27.1/bin/linux/amd64/kubectl"
-   chmod +x ./kubectl
-   sudo mv ./kubectl /usr/local/bin/kubectl
+ ```
+ ```
+ # For Linux
+ curl -LO "https://dl.k8s.io/release/v1.27.1/bin/linux/amd64/kubectl"
+ chmod +x ./kubectl
+ sudo mv ./kubectl /usr/local/bin/kubectl
 
-   # Verify installation
-   kubectl version --client
+ # Verify installation
+ kubectl version --client
 
    ```
 ## ✔️ Start Localhost IP-address:Port - Use your IP
