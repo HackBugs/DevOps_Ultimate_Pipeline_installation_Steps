@@ -2,7 +2,7 @@
 ## 🛠️ After Reboot Virtul Machine or Reboot Your System use these CMD to run Service Again.
 - ## Author : ✍️ HackBugs
 ________________________________________________________________________________________________________________________________
-<details><summary><b>Restart DevOps tools</b></summary>
+
 ## ✔️ Start Services of these DevOps tools
 ```
 - docker ps -a
@@ -151,8 +151,7 @@ docker logs grafana
  kubectl version --client
  ```
 ________________________________________________________________________________________________________________________________________________________________________________________
-<details><summary><b>Restart Minikube</b></summary>
- 
+
 ## ✔️ After installing Minikube, restart your Ubuntu machine and run minikube start --force. If issues persist, try the command again.
 The error message indicates multiple issues when Minikube attempts to start with the Docker driver. Here’s a breakdown of the errors and how to address them:
 
