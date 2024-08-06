@@ -119,7 +119,7 @@ docker logs prometheus
 docker logs grafana
 ```
 
-## ✔️ kubernetes orchestration
+## ✔️ (Minikube) - Kubernetes Orchestration
 - Minikube > Kubeadm > kubelet > kubectl
 1. Restart Minikube
  ```
