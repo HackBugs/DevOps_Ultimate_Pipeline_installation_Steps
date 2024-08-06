@@ -314,12 +314,14 @@ By following these steps, you should be able to manage Minikube effectively afte
 </details>
 
 <details><summary><b>✔️ Start Localhost IP-address:Port - Use your IP</b></summary>
+ 
 - http://192.168.43.72:8081/  Nexus
 - http://192.168.43.72:9000/ SonarQube
 - http://192.168.43.72:8080/ Jenkins
 - http://192.168.43.72:9090/ Prometheus
 - http://192.168.43.72:3000/ Grafana
 - http://192.168.43.72:9115/ Blackbox Exporter
+
 </details>
 
 <details><summary><b> ✍️ Installation Setups Process DevOps Project</b></summary>
