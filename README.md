@@ -1,9 +1,9 @@
 
 ## 🛠️ After Reboot Virtul Machine or Reboot Your System use these CMD to run Service Again.
 - ## Author : ✍️ HackBugs
-________________________________________________________________________________________________________________________________
 
-## ✔️ Start Services of these DevOps tools
+<details><summary><b>Commands Restart DevOps Tools</b></summary>
+## ✔️ Start Services of these DevOps tools 
 ```
 - docker ps -a
 ```
@@ -118,11 +118,14 @@ docker ps -a
 docker logs prometheus
 docker logs grafana
 ```
+</details>
+<details><summary><b>✔️ (Minikube) - Kubernetes Orchestration</b></summary>
 
-## ✔️ (Minikube) - Kubernetes Orchestration
 - Minikube > Kubeadm > kubelet > kubectl
+ 
 1. Restart Minikube
- ```
+ 
+ ```sh
  minikube stop
  minikube start --driver=docker
  ```
@@ -136,12 +139,12 @@ docker logs grafana
  sudo systemctl restart kubelet
  ```
 4. Restart kubectl
- ```
+ ```sh
  kubectl config view
  kubectl config use-context <context-name>
-
+  
  ```
- ```
+ ```sh
  # For Linux
  curl -LO "https://dl.k8s.io/release/v1.27.1/bin/linux/amd64/kubectl"
  chmod +x ./kubectl
@@ -150,6 +153,7 @@ docker logs grafana
  # Verify installation
  kubectl version --client
  ```
+</details>
 ________________________________________________________________________________________________________________________________________________________________________________________
 
 ## ✔️ After installing Minikube, restart your Ubuntu machine and run minikube start --force. If issues persist, try the command.
