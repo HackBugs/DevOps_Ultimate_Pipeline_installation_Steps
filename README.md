@@ -1,6 +1,21 @@
 
 ## 🛠️ After Reboot Virtul Machine or Reboot Your System use these CMD to run Service Again.
-- ## Author : ✍️ HackBugs
+
+> Author : ✍️ HackBugs
+
+<hr>
+
+Check Port and update ports
+
+```sh
+cmd - netstat and ss and
+cmd - sudo ethtool enp0s3
+./prometheus --web.listen-address=":9043" &
+sudo ufw status
+sudo ufw allow 9043/tcp
+```
+
+> If you are running any script if you want to run backgrong use & like - `./blackbox_exporter &` and `./prometheus &`
 
 <details><summary><b>✔️ Start Services of these DevOps tools</b></summary>
  
@@ -70,6 +85,7 @@ cd > blackbox_exporter-0.25.0.linux-amd64
 ./prometheus &
 ```
 ```
+sudo systemctl stop prometheus
 sudo systemctl start prometheus
 sudo systemctl daemon-reload
 ```
@@ -98,21 +114,25 @@ sudo journalctl -u grafana-server
 ```
 
 ## ✔️ Docker Start docker container
-#### Start Prometheus container
-```
-docker start prometheus
-```
+#### container of - Prometheus, Grafana, Sonar, Nexus
 
-#### Start Grafana container
 ```
-docker start grafana
-```
-
 #### Check running containers
-```
 docker ps -a
 ```
 
+```
+docker start prometheus
+```
+```
+docker start grafana
+```
+```
+docker start sonar
+```
+```
+docker start Nexus
+```
 #### Logs Check:
 ```
 docker logs prometheus
