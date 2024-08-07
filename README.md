@@ -113,8 +113,7 @@ sudo journalctl -u prometheus
 sudo journalctl -u grafana-server
 ```
 
-## ✔️ Docker Start docker container
-#### container of - Prometheus, Grafana, Sonar, Nexus
+## ✔️ Docker Start docker container of - Prometheus, Grafana, Sonar, Nexus
 
 ```
 #### Check running containers
