@@ -14,6 +14,28 @@ cmd - sudo ethtool enp0s3
 sudo ufw status
 sudo ufw allow 9043/tcp
 ```
+```
+#!/bin/bash
+
+echo "Listing all active services:"
+systemctl list-units --type=service
+
+echo ""
+echo "Listing all services including inactive ones:"
+systemctl list-unit-files --type=service
+
+echo ""
+echo "Checking the status of a specific service (e.g., nginx):"
+systemctl status nginx
+
+echo ""
+echo "Listing all services with their state (including stopped services):"
+systemctl list-units --type=service --all
+
+echo ""
+echo "Listing all services and their dependencies:"
+systemctl list-dependencies
+```
 
 > If you are running any script if you want to run backgrong use & like - `./blackbox_exporter &` and `./prometheus &`
 
