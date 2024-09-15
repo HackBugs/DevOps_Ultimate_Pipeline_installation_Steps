@@ -127,6 +127,10 @@ sudo systemctl daemon-reload
 ```
 sudo systemctl start grafana-server
 ```
+### OR
+```
+sudo /bin/systemctl start grafana-server
+```
 
 #### Check status
 ```
