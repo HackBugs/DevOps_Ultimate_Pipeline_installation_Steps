@@ -132,6 +132,12 @@ sudo systemctl start grafana-server
 sudo /bin/systemctl start grafana-server
 ```
 
+### If BlackBox_exporter is not running on prot 9115 than we can use other PORT  as you want of BlackBox_exporter
+```
+./consul_exporter --web.listen-address=":9108" &'
+```
+
+
 #### Check status
 ```
 sudo systemctl status prometheus
